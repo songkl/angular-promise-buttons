@@ -33,6 +33,9 @@ angular.module('angularPromiseButtons')
 
                 var loading = function (pm)
                     {
+                        el.removeClass(cfg.errorClass);
+                        el.removeClass(cfg.successClass);
+
                         if(scope.promiseBtnLoading){
                             changeText(scope.promiseBtnLoading);
                         }else{
@@ -48,13 +51,12 @@ angular.module('angularPromiseButtons')
 
                         pm.then(function(){
                             el.addClass(cfg.successClass);
+                            el.removeClass(cfg.errorClass);
                             changeText(scope.promiseBtnSuccess);
                         }).catch(function(){
                             el.addClass(cfg.errorClass);
+                            el.removeClass(cfg.successClass);
                             changeText(scope.promiseBtnError);
-                            setTimeout(function(){
-                                el.html(scope._baseHtml);
-                            },1200);
                         });
 
                     },
