@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+/bower_components
+/example/bower_components
+/coverage
+/node_modules
+
