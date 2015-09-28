@@ -24,7 +24,7 @@ angular.module('angularPromiseButtons')
                         el.html('<span>'+str+'</span>');
                         el.append(cfg.spinnerTpl);
                     }
-                }
+                };
 
 
                 el.append(cfg.spinnerTpl);
