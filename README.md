@@ -19,7 +19,7 @@ Also you can play with the code on [Plnkr](http://plnkr.co/edit/yKrlohXVL15fRjTj
 
 Install it via bower
 ```
-bower install angular-promise-buttons -S
+bower install ng-promise-buttons -S
 ```
 and add `angularPromiseButtons` as dependency in your main module:
 ```
